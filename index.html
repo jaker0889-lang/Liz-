@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Little Something for Liz 🌻</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   
+    <audio id="bgMusic" loop>
+        <source src="assets/kausapiling.mp3.mp3" type="audio/mpeg">
+    </audio>
+
+   
+    <audio id="envelopeSound">
+        <source src="assets/envelope.mp3.mp3" type="audio/mpeg">
+    </audio>
+
+    <section id="loadingScreen" class="screen">
+        <div class="sunflower-loader">🌻</div>
+        <h1>Preparing something special...</h1>
+        <p>Just a little something for you.</p>
+    </section>
+
+    <section id="envelopeScreen" class="screen hidden">
+        <div class="envelope" id="envelope">
+            <div class="envelope-flap"></div>
+            <div class="envelope-letter">🌻</div>
+        </div>
+        <h1>For Liz</h1>
+        <p>There's something I'd like you to read.</p>
+        <button id="openEnvelope">Open your letter</button>
+    </section>
+
+    <section id="questionScreen" class="screen hidden">
+    <div class="question-card">
+        <span class="question-flower">🌻</span>
+
+        <p class="question-label">A little question for you</p>
+
+        <h1>Can You Read Me?</h1>
+
+        <p class="question-text">
+            You once said that you can read people, right?
+            So, can you read me? Can you understand my actions,
+            especially when it comes to you?
+        </p>
+
+        <textarea
+            id="answerInput"
+            placeholder="Tell me what you think..."
+        ></textarea>
+        <p class="privacy-note">
+    Your response will be sent to my private Google Sheet.
+    Please don't share anything too personal.
+</p>
+
+        <button id="submitAnswer">Continue</button>
+    </div>
+</section>
+    
+    <section id="continueScreen" class="screen hidden">
+    <div class="continue-card">
+        <span class="continue-flower">🌻</span>
+
+        <p class="continue-label">One more thing...</p>
+
+        <h1>To Be Continued...</h1>
+
+        <p class="continue-description">
+            There's something I've been wanting to tell you.
+        </p>
+
+        <button id="revealButton">I'm ready</button>
+    </div>
+</section>
+
+   <section id="confessionScreen" class="screen hidden">
+    <div class="confession-card">
+
+        <div class="liz-photo">
+    <img src="assets/Liz.jpg" alt="A special photo">
+</div>
+        <div class="flower-container">
+            <div class="flower">
+                <div class="petals">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="flower-center"></div>
+            </div>
+            <div class="stem"></div>
+            <div class="leaf leaf-left"></div>
+            <div class="leaf leaf-right"></div>
+        </div>
+
+        <p class="confession-label">Something from my heart</p>
+
+        <h1>A Little Something for You</h1>
+
+        <p id="confessionMessage">
+        I made this little something for you because I wanted to show how special you are to me.
+
+        I don't know what gonna happen in the future, but I know that I genuinely enjoy getting to know you. I really appreciate you presence, your little gestures and the moments we share.
+
+        I just want to be honest about how I feel. I really like you liz and I'd really love to get to know you even more.
+
+        I know it might be too early but I believe confessing sooner is better than waiting for the right time. Even there's no right time cause we're the one who decide when the right time is
+
+        You're actually my childhood crush. I know that might be hard to believe since we're just a kids back then, but I want you to know my feelings were genuine. Even though we were young to understand what love really meant.
+
+        I really like you liz. This is something I've wanted to tell you earlier, but I was shy to say it. And I decided to create this little website to finally express my feelings for you.
+
+        No pressure, pandak. I just wanted you to know.
+        </p>
+
+    
+        <button id="endingButton">Continue</button>
+
+    </div>
+
+</section>
+
+<section id="endingScreen" class="screen hidden">
+
+    <div class="ending-card">
+
+        <h1>Thank you for reading. 💙</h1>
+
+        <p>
+            Whatever your answer may be,
+            I'm glad I finally told you.
+        </p>
+
+        <p>
+            You don't have to rush.
+            Just take your time. 🌻
+        </p>
+
+        <h3>— Jaren</h3>
+
+</div>
+</section>
+
+    <iframe name="responseframe"
+    style="display:none;"></iframe>
+
+    <script src="script.js"></script>
+</body>
+</html>
